@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 const logoImages = [
-  ...Array.from({ length: 35 }, (_, i) => `/logos/${i + 1}.png`)
+  ...Array.from({ length: 55 }, (_, i) => `/logos/${i + 1}.png`)
 ];
 
 export default function LogoDesignGallery() {
@@ -23,7 +23,9 @@ export default function LogoDesignGallery() {
     <div className="min-h-screen bg-gradient-to-br from-green-100 via-white to-green-300 py-16 px-4 flex flex-col items-center">
       <div className="mb-10 text-center">
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-400 to-green-600 mb-4 lg:mb-8 drop-shadow-lg">Logo Design Gallery</h1>
-        <p className="mb-4 text-lg text-green-900 max-w-2xl mx-auto">Discover our unique logo designs. Each logo is protected with a watermark and displayed in a modern glassmorphism card.</p>
+       <p className="mb-4 text-lg">
+  Explore CraftedMart Agency’s premium logo designs. <br /> Each design is protected with a watermark and displayed in modern glassmorphism cards.
+</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-full max-w-6xl">
         {logoImages.map((img, idx) => (
@@ -41,6 +43,7 @@ export default function LogoDesignGallery() {
               height={180}
               className="rounded-xl select-none pointer-events-none border-2 border-green-300 group-hover:border-green-500 transition-all duration-300 z-20"
               draggable={false}
+              loading="lazy"
             />
             <span className="absolute top-4 left-4 bg-green-600 bg-opacity-80 text-xs font-bold text-white px-2 py-1 rounded select-none pointer-events-none z-30 shadow-lg" style={{userSelect: 'none'}}>
               ID: {`FDR-${idx}`}
