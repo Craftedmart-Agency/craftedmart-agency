@@ -13,7 +13,7 @@ const TermsPage = () => {
         </p>
 
         <p className="mb-6 text-gray-300">
-          Welcome to <span className="font-semibold">Web Innovation</span>. By
+          Welcome to <span className="font-semibold">Craftedmart Agency</span>. By
           accessing or using our website and services, you agree to comply with
           these Terms & Conditions. Please read them carefully.
         </p>
@@ -26,7 +26,7 @@ const TermsPage = () => {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">2. Services</h2>
         <p className="text-gray-300 mb-4">
-          Web Innovation provides web development, digital marketing, and related
+          Craftedmart Agency provides web development, digital marketing, and related
           online solutions. Services may include:
         </p>
         <ul className="list-disc list-inside text-gray-300 mb-4">
@@ -48,20 +48,20 @@ const TermsPage = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-4">4. Payments and Billing</h2>
         <p className="text-gray-300 mb-4">
           All service fees are detailed in proposals or invoices. Payments must be
-          made according to the agreed schedule. Web Innovation reserves the right
+          made according to the agreed schedule. Craftedmart Agency reserves the right
           to suspend services if payments are overdue.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">5. Intellectual Property</h2>
         <p className="text-gray-300 mb-4">
-          All website content, design, code, and materials developed by Web Innovation
+          All website content, design, code, and materials developed by Craftedmart Agency
           remain our property until full payment is received. You may not copy,
           reproduce, or distribute our materials without permission.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">6. Confidentiality</h2>
         <p className="text-gray-300 mb-4">
-          Any confidential data shared with Web Innovation will be handled responsibly
+          Any confidential data shared with Craftedmart Agency will be handled responsibly
           and not shared with third parties without consent.
         </p>
 
@@ -73,7 +73,7 @@ const TermsPage = () => {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">8. Limitation of Liability</h2>
         <p className="text-gray-300 mb-4">
-          Web Innovation is not liable for any direct or indirect damages arising
+          Craftedmart Agency is not liable for any direct or indirect damages arising
           from the use of our services or website, including delays, interruptions,
           or loss of data.
         </p>
@@ -86,7 +86,7 @@ const TermsPage = () => {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">10. Changes to Terms</h2>
         <p className="text-gray-300 mb-4">
-          Web Innovation may update these Terms & Conditions from time to time.
+          Craftedmart Agency may update these Terms & Conditions from time to time.
           Updated versions will be posted on this page with a new “last updated” date.
         </p>
 

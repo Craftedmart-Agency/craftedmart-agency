@@ -55,8 +55,8 @@ const Navbar = () => {
     >
       {/* logo */}
       <Link href="/" className="cursor-pointer lg:pl-0">
-        <div className="flex items-center absolute -top-2 md:-top-4">
-          <div className="w-[180px] h-[100px] sm:w-[140px] sm:h-[70px] md:w-[180px] md:h-[90px] lg:w-[300px] lg:h-[150px] -rotate-15">
+        <div className="flex items-center absolute -top-4 md:-top-6">
+          <div className="w-[180px] h-[100px] sm:w-[140px] sm:h-[70px] md:w-[180px] md:h-[90px] lg:w-[300px] lg:h-[150px] ">
             <Image
               src={logo}
               alt="logo"

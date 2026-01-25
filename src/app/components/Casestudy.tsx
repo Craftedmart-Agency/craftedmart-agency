@@ -42,7 +42,7 @@ const caseStudies = [
 
 export default function CaseStudy() {
   return (
-    <section className="bg-[#0a0a0d] text-white pt-16">
+    <section className="bg-[#0a0a0d] text-white py-16">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-center text-3xl md:text-5xl font-bold mb-16">
           <span className="opacity-20 block text-5xl md:text-7xl lg:text-9xl -mb-10 md:-mb-12 text-slate-600">Case Study</span>

@@ -39,7 +39,7 @@ export default function Footer() {
                 <h3 className="font-semibold">Address</h3>
               </div>
               <p className="text-gray-400 text-sm mt-1">
-                168/170, Avenue 01, Oxigen DOHS, Chittagong Bangladeash
+                168/170, Burischar Bazar, NazumiaHat, Hathazari, Chittagong Bangladeash
               </p>
             </div>
 
@@ -49,8 +49,8 @@ export default function Footer() {
                 <HiOutlineMail />
                 <h3 className="font-semibold">Say Hello</h3>
               </div>
-              <p className="text-gray-400 text-sm mt-1">info@webinnovation.com</p>
-              <p className="text-gray-400 text-sm">info@websupport.com</p>
+              <p className="text-gray-400 text-sm mt-1">info@craftedmartagency.com</p>
+              <p className="text-gray-400 text-sm">info@craftedmartsupport.com</p>
             </div>
 
             {/* Newsletter */}
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
           <p>
-            © Copyright 2025 <span className="text-green-500">Web Innovation</span> | Design By Md Shakil
+            © Copyright 2026 <span className="text-green-500">Craftedmart Agency</span> | All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <FaFacebookF className="hover:text-green-500 cursor-pointer" />

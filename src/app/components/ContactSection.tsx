@@ -14,16 +14,16 @@ export default function ContactSection() {
  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const steps:AccordionItem[] = [
-    { title: "What kind of development services does Web Innovation offer?", content: "At Web Innovation, We develop any platform you want to build. From designing custom websites to CMS-based sites, Our Website Developer in Bangladesh can help you to develop any of these websites that will be responsible and functional. For website development, we use popular frameworks like WordPress, Laravel, and Node.js." },
+    { title: "What kind of development services does Craftedmart Agency offer?", content: "At Craftedmart Agency, We develop any platform you want to build. From designing custom websites to CMS-based sites, Our Website Developer in Bangladesh can help you to develop any of these websites that will be responsible and functional. For website development, we use popular frameworks like WordPress, Laravel, and Node.js." },
     {
       title: "How secure will my website be?",
       content:
         "We know that every website needs to be protected and we build websites with strong protection. Our security process includes SSL certification, secure coding, and regular updates to the website for any vulnerabilities.",
     },
     { title: "Can you help improve my website's SEO?", content: "Yes, Our developers will help you improve your SEO ranking with their expertise. As the best of one Website Development Company in Chittagong, we are professional at this part." },
-    { title: "Will I be able to update my website myself?", content: "Yes, you can update your website by yourself. Web Innovation develop dynamic websites with the user-friendly framework and customizable websites so that you can change or update your website contents, images, or more without having any technical skills." },
-    { title: "How long will it take to build my website?", content: "The timeline depends on the complexity of your project. A basic website usually takes 1–2 weeks, while larger custom platforms may take 1–3 months. At Web Innovation, we always set clear deadlines and keep you updated at every stage of development." },
-    { title: "Will my website work on mobile devices?", content: "Absolutely. All websites developed by Web Innovation are fully responsive, meaning they look and function perfectly on desktops, tablets, and mobile devices. We prioritize a mobile-first approach since most users browse from smartphones today." },
+    { title: "Will I be able to update my website myself?", content: "Yes, you can update your website by yourself. Craftedmart Agency develop dynamic websites with the user-friendly framework and customizable websites so that you can change or update your website contents, images, or more without having any technical skills." },
+    { title: "How long will it take to build my website?", content: "The timeline depends on the complexity of your project. A basic website usually takes 1–2 weeks, while larger custom platforms may take 1–3 months. At Craftedmart Agency, we always set clear deadlines and keep you updated at every stage of development." },
+    { title: "Will my website work on mobile devices?", content: "Absolutely. All websites developed by Craftedmart Agency are fully responsive, meaning they look and function perfectly on desktops, tablets, and mobile devices. We prioritize a mobile-first approach since most users browse from smartphones today." },
 
   ];
 

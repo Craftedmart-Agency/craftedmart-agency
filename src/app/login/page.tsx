@@ -121,7 +121,7 @@ export default function LoginPage() {
           <input
             type="checkbox"
             id="remember"
-            className="w-4 h-4 accent-orange-500"
+            className="w-4 h-4 accent-green-500"
             onChange={(e) => setIsChecked(e.target.checked)}
           />
           <label htmlFor="remember" className="text-gray-400">Remember Me</label>
@@ -130,7 +130,7 @@ export default function LoginPage() {
         {/* Login button */}
         <button
           disabled={loading || !isChecked}
-          className="bg-orange-400 hover:bg-orange-500 text-black font-bold py-3 rounded-md disabled:opacity-50 transition"
+          className="bg-green-400 hover:bg-green-500 text-black font-bold py-3 rounded-md disabled:opacity-50 transition"
         >
           {loading ? "Loading..." : "Login"}
         </button>

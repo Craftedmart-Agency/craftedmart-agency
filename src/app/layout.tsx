@@ -8,9 +8,9 @@ import { AuthProvider } from "./context/AuthContext";
 import { ModalProvider } from "./components/Modal/ModalProvider";
 
 export const metadata: Metadata = {
-  title: "Web Innovation",
+  title: "Craftedmart Agency",
   description:
-    "Discover our web innovation app that helps businesses transform ideas into digital solutions with cutting-edge technology and user-friendly design.",
+    "CraftedMart Agency – Web, Branding & Digital Solutions",
   icons: {
     icon: "/logo.png",
   },
