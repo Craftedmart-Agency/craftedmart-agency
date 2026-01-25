@@ -37,8 +37,7 @@ const Choose = () => {
 
             {/* Logo & Heading */}
             <h2 className="text-2xl font-bold flex items-center">
-              <span className="text-green-500 mr-1">●</span> Web Inn
-              <span className="text-rose-500">o</span>vation
+              <span className="text-green-500 mr-1">●</span> Crafted M<span className="text-rose-500">a</span>rt Agency
             </h2>
             <h3 className="mt-6 text-lg font-semibold">
               Best Creative IT Agency And Solutions{" "}

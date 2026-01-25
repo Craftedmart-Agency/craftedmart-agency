@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2 ">
             <span className="text-green-500 text-2xl font-bold">●</span>
-            <h2 className="md:text-2xl font-bold">Web Inn<span className="text-rose-500">o</span>vation</h2>
+            <h2 className="md:text-2xl font-bold">Crafted M<span className="text-rose-400">a</span>rt Agency</h2>
           </div>
 
           {/* Call Any Time */}
@@ -108,16 +108,23 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
-          <p>
-            © Copyright 2026 <span className="text-green-500">Craftedmart Agency</span> | All rights reserved.
-          </p>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <FaFacebookF className="hover:text-green-500 cursor-pointer" />
-            <FaTwitter className="hover:text-green-500 cursor-pointer" />
-            <FaPinterestP className="hover:text-green-500 cursor-pointer" />
-          </div>
-        </div>
+<div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
+  <p>
+    © Copyright 2026 <span className="text-green-500">Craftedmart Agency</span> | All rights reserved.
+  </p>
+  <div className="flex gap-4 mt-4 md:mt-0">
+    <a
+      href="https://www.facebook.com/Craftedmartagency"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaFacebookF className="hover:text-green-500 cursor-pointer" />
+    </a>
+    <FaTwitter className="hover:text-green-500 cursor-pointer" />
+    <FaPinterestP className="hover:text-green-500 cursor-pointer" />
+  </div>
+</div>
+
       </div>
     </footer>
   );
