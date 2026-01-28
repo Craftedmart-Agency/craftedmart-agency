@@ -55,8 +55,8 @@ const Navbar = () => {
     >
       {/* logo */}
       <Link href="/" className="cursor-pointer lg:pl-0">
-        <div className="flex items-center absolute -top-4 md:-top-6">
-          <div className="w-[180px] h-[100px] sm:w-[140px] sm:h-[70px] md:w-[180px] md:h-[90px] lg:w-[300px] lg:h-[150px] ">
+        <div className="flex items-center absolute -top-4 md:-top-3 lg:-top-6 lg:left-0">
+          <div className="w-[180px] h-[100px] sm:w-[150px] sm:h-[70px] md:w-[180px] md:h-[90px] lg:w-[300px] lg:h-[150px] ">
             <Image
               src={logo}
               alt="logo"
@@ -71,7 +71,7 @@ const Navbar = () => {
       <div></div>
 
       {/* Desktop nav */}
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <ul className="flex gap-5 justify-center items-center">
           <Link href="/">
             <li className={`${path == "/" ? "text-green-500" : ""}`}>Home</li>
@@ -101,7 +101,7 @@ const Navbar = () => {
 
       {/* Right side buttons */}
       <div className="flex gap-4 lg:ml-5 items-center">
-        <div className="hidden md:flex items-center justify-center gap-2">
+        <div className="hidden lg:flex items-center justify-center gap-2">
           <BsTelephonePlus className="text-green-500" />
           <div className="text-xs">
             <p>For Client Support:</p>
@@ -135,7 +135,7 @@ const Navbar = () => {
         {/* Hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-2xl focus:outline-none mr-4 my-3 "
+          className="lg:hidden text-2xl focus:outline-none mr-4 my-3 "
         >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -145,7 +145,7 @@ const Navbar = () => {
       {menuOpen && (
         <div
           ref={menuRef}
-          className="absolute top-16 left-0 z-10 w-full bg-gradient-to-r from-gray-800 to-purple-600 text-white shadow-lg md:hidden animate-slide-down"
+          className="absolute top-16 left-0 z-10 w-full bg-gradient-to-r from-gray-800 to-purple-600 text-white shadow-lg lg:hidden animate-slide-down"
         >
           <ul className="flex flex-col gap-4 py-6 px-6 text-lg">
             <Link href="/" onClick={() => setMenuOpen(false)}>
