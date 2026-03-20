@@ -46,25 +46,25 @@ const Review = () => {
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-800 pt-8">
           <div>
             <h4 className="text-2xl font-bold">
-              4 <span className="text-green-500">Years</span>
+              4 <span className="text-teal-400">Years</span>
             </h4>
             <p className="text-gray-400 text-sm">Working With Passion</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold">
-              1.4K <span className="text-green-500">Customer</span>
+              1.4K <span className="text-teal-400">Customer</span>
             </h4>
             <p className="text-gray-400 text-sm">Satisfied Customer</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold">
-              736 <span className="text-green-500">Project</span>
+              736 <span className="text-teal-400">Project</span>
             </h4>
             <p className="text-gray-400 text-sm">We Have Completed</p>
           </div>
           <div>
             <h4 className="text-2xl font-bold">
-              13 <span className="text-green-500">Awards</span>
+              13 <span className="text-teal-400">Awards</span>
             </h4>
             <p className="text-gray-400 text-sm">Achievement For Service</p>
           </div>

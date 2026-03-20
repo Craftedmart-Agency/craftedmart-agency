@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/logo/logo.png";
+import logo from "@/assets/logo/logo.svg";
 import { BsTelephonePlus } from "react-icons/bs";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import Button from "./shared/Button";
 import { useAuth } from "../context/AuthContext";
-
-// import { useAuth } from "@/context/AuthContext"; // adjust import path if needed
 
 const Navbar = () => {
   const router = useRouter();
@@ -19,180 +18,201 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
-  // Close menu when clicking outside
+  const closeMenu = () => setMenuOpen(false);
+
+  // Close menu when clicking outside & prevent scroll
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setMenuOpen(false);
+        closeMenu();
       }
     };
 
     if (menuOpen) {
       document.addEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "hidden";
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "auto";
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "auto";
     };
   }, [menuOpen]);
 
-  // Add background when scrolling
+  // Scroll effect
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Service", href: "/service" },
+    { name: "Portfolio", href: "/websites" },
+    { name: "Pricing", href: "/pricing" },
+  ];
+
   return (
     <nav
-      className={`fixed top-0 w-full z-20 flex justify-between items-center lg:px-12 py-2 lg:py-6 transition-colors duration-300 ${
-        scrolled ? "bg-gray-900 shadow-md" : "bg-transparent"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-black-900/95 backdrop-blur-sm shadow-xl h-24"
+          : "bg-transparent h-24 md:h-24"
       } text-white`}
     >
-      {/* logo */}
-      <Link href="/" className="cursor-pointer lg:pl-0">
-        <div className="flex items-center absolute -top-4 md:-top-3 lg:-top-6 lg:left-0">
-          <div className="w-[180px] h-[100px] sm:w-[150px] sm:h-[70px] md:w-[180px] md:h-[90px] lg:w-[300px] lg:h-[150px] ">
+      <div className="container mx-auto px-4 lg:px-12 flex justify-between items-center h-full">
+        {/* Logo */}
+        <Link href="/" onClick={closeMenu} className="flex items-center">
+          <div className="relative w-[220px] h-[70px] md:w-[200px] md:h-[65px] lg:w-[300px] lg:h-[90px]">
             <Image
               src={logo}
               alt="logo"
-              width={300}
-              height={150}
+              fill
               priority
-              className="w-full h-full object-contain"
+              className="object-contain object-left scale-110 md:scale-115 lg:scale-100 ml-5 md:ml-0"
             />
           </div>
-        </div>
-      </Link>
-      <div></div>
-
-      {/* Desktop nav */}
-      <div className="hidden lg:flex">
-        <ul className="flex gap-5 justify-center items-center">
-          <Link href="/">
-            <li className={`${path == "/" ? "text-green-500" : ""}`}>Home</li>
-          </Link>
-          <Link href="/about">
-            <li className={`${path == "/about" ? "text-green-500" : ""}`}>
-              About
-            </li>
-          </Link>
-          <Link href="/service">
-            <li className={`${path == "/service" ? "text-green-500" : ""}`}>
-              Service
-            </li>
-          </Link>
-          <Link href="/websites">
-            <li className={`${path == "/websites" ? "text-green-500" : ""}`}>
-              Portfolio
-            </li>
-          </Link>
-          <Link href="/pricing">
-            <li className={`${path == "/pricing" ? "text-green-500" : ""}`}>
-              Pricing
-            </li>
-          </Link>
-        </ul>
-      </div>
-
-      {/* Right side buttons */}
-      <div className="flex gap-4 lg:ml-5 items-center">
-        <div className="hidden lg:flex items-center justify-center gap-2">
-          <BsTelephonePlus className="text-green-500" />
-          <div className="text-xs">
-            <p>For Client Support:</p>
-            <p>+880-1815-149399</p>
-          </div>
-        </div>
-
-        <Link href="#contactme" className="hidden lg:flex">
-          <button className="text-green-400 border rounded-md border-green-400 px-5 py-2 font-semibold cursor-pointer hover:bg-green-500 hover:text-white transition">
-            Get A Quote
-          </button>
         </Link>
 
-        {/* Desktop Auth Buttons */}
-        {!user ? (
-          <Link href="/login" className="hidden md:flex">
-            <Button text="Login" />
-          </Link>
-        ) : (
-          <button
-            onClick={async () => {
-              await logoutUser();
-              router.push("/"); // ✅ redirect to home
-            }}
-            className="hidden md:flex text-red-500 border border-red-500 px-5 py-2 rounded-md font-semibold hover:bg-red-600 hover:text-white transition"
-          >
-            Logout
-          </button>
-        )}
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <ul className="flex space-x-6 font-medium">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <li
+                  className={`hover:text-teal-400 transition cursor-pointer ${
+                    path === link.href ? "text-teal-400" : ""
+                  }`}
+                >
+                  {link.name}
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
 
-        {/* Hamburger */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-2xl focus:outline-none mr-4 my-3 "
-        >
-          {menuOpen ? <FiX /> : <FiMenu />}
-        </button>
-      </div>
+        {/* Right Side */}
+        <div className="flex items-center gap-4">
+          {/* Contact */}
+          <div className="hidden xl:flex items-center gap-2 border-r border-gray-700 pr-4">
+            <BsTelephonePlus className="text-teal-400" />
+            <div className="text-[10px] leading-tight">
+              <p className="text-gray-400">Client Support:</p>
+              <p className="font-bold">+880-1815-149399</p>
+            </div>
+          </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div
-          ref={menuRef}
-          className="absolute top-16 left-0 z-10 w-full bg-gradient-to-r from-gray-800 to-purple-600 text-white shadow-lg lg:hidden animate-slide-down"
-        >
-          <ul className="flex flex-col gap-4 py-6 px-6 text-lg">
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              <li className={`${path == "/" ? "text-green-500" : ""}`}>Home</li>
-            </Link>
-            <Link href="/about" onClick={() => setMenuOpen(false)}>
-              <li className={`${path == "/about" ? "text-green-500" : ""}`}>
-                About
-              </li>
-            </Link>
-            <Link href="/service" onClick={() => setMenuOpen(false)}>
-              <li className={`${path == "/service" ? "text-green-500" : ""}`}>
-                Service
-              </li>
-            </Link>
-            <Link href="/websites" onClick={() => setMenuOpen(false)}>
-              <li className={`${path == "/websites" ? "text-green-500" : ""}`}>
-                Portfolio
-              </li>
-            </Link>
-            <Link href="/pricing" onClick={() => setMenuOpen(false)}>
-              <li className={`${path == "/pricing" ? "text-green-500" : ""}`}>
-                Pricing
-              </li>
-            </Link>
-
-            {/* Mobile Auth Buttons */}
+          {/* Buttons */}
+          <div className="hidden md:flex items-center gap-3">
             {!user ? (
-              <div>
-                <Link href="/login" onClick={() => setMenuOpen(false)}>
-                  <Button text="Login" />
-                </Link>
-              </div>
+              <Link href="/login">
+                <Button text="Login" />
+              </Link>
             ) : (
               <button
                 onClick={async () => {
                   await logoutUser();
-                  setMenuOpen(false);
-                  router.push("/"); // ✅ redirect to home
+                  router.push("/");
                 }}
-                className="text-red-500 border border-red-500 px-5 py-2 rounded-md font-semibold hover:bg-red-600 hover:text-white transition"
+                className="text-red-500 border border-red-500 px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-red-500 hover:text-white transition"
               >
                 Logout
               </button>
             )}
-          </ul>
+
+            <Link href="#contactme">
+              <button className="bg-teal-700 text-white px-5 py-3 rounded-md font-semibold hover:bg-teal-500 transition text-sm">
+                Get A Quote
+              </button>
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden text-3xl flex items-center justify-center"
+          >
+            {menuOpen ? (
+              <FiX className="text-teal-400" />
+            ) : (
+              <FiMenu className="leading-none" />
+            )}
+          </button>
         </div>
+      </div>
+
+      {/* Mobile Drawer */}
+      <div
+        ref={menuRef}
+        className={`fixed top-0 right-0 h-screen w-[75%] max-w-[300px] bg-gray-900 shadow-2xl transform transition-transform duration-300 z-40 lg:hidden ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <ul className="flex flex-col gap-6 pt-24 px-8 text-lg font-semibold">
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} onClick={closeMenu}>
+              <li
+                className={`${
+                  path === link.href
+                    ? "text-teal-400"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                {link.name}
+              </li>
+            </Link>
+          ))}
+
+          <hr className="border-gray-800" />
+
+          <div className="flex flex-col gap-6">
+            {!user ? (
+              <Link href="/login" onClick={closeMenu}>
+                <Button text="Login" />
+              </Link>
+            ) : (
+              <button
+                onClick={async () => {
+                  await logoutUser();
+                  closeMenu();
+                  router.push("/");
+                }}
+                className="w-full text-red-500 border border-red-500 py-2 rounded-md font-semibold"
+              >
+                Logout
+              </button>
+            )}
+
+            {/* Social */}
+            <div className="pt-4 flex justify-center gap-5">
+              <a
+                href="https://www.facebook.com/Craftedmartagency"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF className="hover:text-teal-400 transition cursor-pointer" />
+              </a>
+              <FaInstagram />
+              <FaLinkedinIn />
+            </div>
+
+            <p className="text-center text-[10px] text-gray-500">
+              © 2026 CraftedMart Agency
+            </p>
+          </div>
+        </ul>
+      </div>
+
+      {/* Overlay */}
+      {menuOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30 lg:hidden"
+          onClick={closeMenu}
+        />
       )}
     </nav>
   );

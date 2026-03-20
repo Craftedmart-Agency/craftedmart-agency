@@ -12,7 +12,7 @@ export default function AboutBanner({title}:{title: string}) {
 
         {/* Breadcrumb */}
         <div className="flex items-center justify-center gap-2 text-sm">
-          <Link href="/" className="text-green-400 hover:underline">
+          <Link href="/" className="text-teal-400 hover:underline">
             Home
           </Link>
           <span className="text-white">→</span>

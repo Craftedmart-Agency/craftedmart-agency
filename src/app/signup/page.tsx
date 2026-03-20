@@ -141,7 +141,7 @@ const SignUpPage: React.FC = () => {
           <input
             type="checkbox"
             id="terms"
-            className="w-4 h-4 accent-green-500"
+            className="w-4 h-4 accent-teal-400"
             onChange={(e) => setIsChecked(e.target.checked)}
           />
           <label htmlFor="terms" className="text-gray-400">
@@ -152,7 +152,7 @@ const SignUpPage: React.FC = () => {
         {/* Sign Up button */}
         <button
           disabled={!isChecked || loading}
-          className="bg-green-400 hover:bg-green-500 text-black font-bold py-3 rounded-md disabled:opacity-50 transition"
+          className="bg-green-400 hover:bg-teal-400 text-black font-bold py-3 rounded-md disabled:opacity-50 transition"
         >
           {loading ? "Loading..." : "Sign Up"}
         </button>

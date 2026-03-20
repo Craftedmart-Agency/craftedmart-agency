@@ -72,13 +72,13 @@ export default function PricingPlans() {
         {packages.map((pkg, idx) => (
           <Card
             key={idx}
-            className="bg-[#111827] text-white rounded-2xl border border-gray-600 shadow-lg shadow-green-500/40 hover:shadow-green-400/80 hover:scale-105 transition-transform relative overflow-hidden"
+            className="bg-[#111827] text-white rounded-2xl border border-gray-600 shadow-lg shadow-teal-400/40 hover:shadow-green-400/80 hover:scale-105 transition-transform relative overflow-hidden"
           >
             <CardHeader className="p-6">
-              <div className="text-4xl font-extrabold text-green-500 opacity-20 absolute top-4 left-4">
+              <div className="text-4xl font-extrabold text-teal-400 opacity-20 absolute top-4 left-4">
                 {String(idx + 1).padStart(2, "0")}
               </div>
-              <CardTitle className="text-3xl font-bold relative z-10 text-center text-green-600">
+              <CardTitle className="text-3xl font-bold relative z-10 text-center text-teal-600">
                 {pkg.name}
               </CardTitle>
               <p className="text-md opacity-70 font-semibold text-center relative z-10">{pkg.price}</p>
@@ -86,7 +86,7 @@ export default function PricingPlans() {
             <CardContent className="p-6 md:p-10 space-y-3 relative z-10">
               {pkg.features.map((feature, fIdx) => (
                 <div key={fIdx} className="flex items-start flex-1 gap-2">
-                  <Check className="w-5 h-5 text-green-400 mt-1" />
+                  <Check className="w-5 h-5 text-teal-400 mt-1" />
                   <span className="text-gray-300 text-sm font-bold flex-1">{feature}</span>
                 </div>
               ))}

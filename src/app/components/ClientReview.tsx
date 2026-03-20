@@ -139,10 +139,10 @@ export default function ClientReview() {
                   <span className="font-semibold">{t.platform}</span>
                   <div className="ml-auto flex gap-1">
                     {[...Array(Math.floor(t.rating))].map((_, i) => (
-                      <span key={i} className="text-green-400">★</span>
+                      <span key={i} className="text-teal-400">★</span>
                     ))}
                     {t.rating % 1 !== 0 && (
-                      <span className="text-green-400">☆</span>
+                      <span className="text-teal-400">☆</span>
                     )}
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default function ClientReview() {
                 {/* Author */}
                 <div>
                   <h4 className="font-bold">{t.name}</h4>
-                  <p className="text-green-400 text-sm">{t.title}</p>
+                  <p className="text-teal-400 text-sm">{t.title}</p>
                 </div>
 
                 {/* Avatar circle outside card */}

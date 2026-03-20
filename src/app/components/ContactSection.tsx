@@ -49,7 +49,7 @@ export default function ContactSection() {
           <div className="mb-8 flex justify-start">
             <Link
               href="tel:+8801815149399"
-              className="inline-block border border-green-500 text-green-400 font-semibold px-3 md:px-6 py-3 rounded hover:bg-green-500 hover:text-black transition"
+              className="inline-block border border-teal-400 text-teal-400 font-semibold px-3 md:px-6 py-3 rounded hover:bg-teal-400 hover:text-black transition"
             >
               Call Us Now: +880 1815 149399
             </Link>
@@ -67,11 +67,11 @@ export default function ContactSection() {
                     aria-expanded={isOpen}
                     aria-controls={`panel-${i}`}
                   >
-                    <span className="font-semibold text-green-400">
+                    <span className="font-semibold text-teal-400">
                       {step.title}
                     </span>
                     <span
-                      className={`text-green-400 transition-transform ${
+                      className={`text-teal-400 transition-transform ${
                         isOpen ? "rotate-0" : "rotate-0"
                       }`}
                     >

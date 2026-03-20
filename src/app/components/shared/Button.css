@@ -2,11 +2,20 @@
 
 
 :root {
-  --text-color: rgb(11, 224, 22);
-  --shadow-color: hsla(210, 40%, 52%, .6);
-  --btn-color: hsl(210, 80%, 42%);
-  --hover-color: hsl(108, 91%, 9%);
-  --bg-color: #141218;
+  /* Teal-400 as the primary text focus */
+  --text-color: #2dd4bf; 
+  
+  /* A subtle teal shadow for depth */
+  --shadow-color: hsla(173, 63%, 50%, .3); 
+  
+  /* Primary button color (Teal-600 for better contrast) */
+  --btn-color: #0d9488; 
+  
+  /* Darker teal for hover states */
+  --hover-color: #115e59; 
+  
+  /* Deep dark background to make the teal pop */
+  --bg-color: #0f172a; 
 }
 
 .custom-button {
@@ -15,7 +24,6 @@
   border: none;
   background: none;
   cursor: pointer;
-  /* font-family: "Soure Code Pro"; */
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;  

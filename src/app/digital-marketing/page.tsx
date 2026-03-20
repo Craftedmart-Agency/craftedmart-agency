@@ -10,7 +10,7 @@ const services = [
     link: "/digital-marketing/logo-design"
   },
   {
-    icon: <FaSearch className="text-4xl text-green-600" />,
+    icon: <FaSearch className="text-4xl text-teal-600" />,
     title: "SEO",
     description: "Boost your website ranking and visibility with expert SEO strategies."
   },

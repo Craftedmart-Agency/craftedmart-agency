@@ -116,7 +116,7 @@ export default function Testimonial() {
         {testimonials.map((data) => (
           <SwiperSlide key={data.id}>
             <div className="bg-slate-900 h-[250px] text-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center space-y-4">
-              <FaQuoteLeft className="text-4xl md:text-5xl text-green-300" />
+              <FaQuoteLeft className="text-4xl md:text-5xl text-teal-300" />
               <Rating
                 style={{ maxWidth: 100 }}
                 value={data.rating}

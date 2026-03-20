@@ -6,7 +6,7 @@ const Choose = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-10 px-10">
         
         <div>
-          <p className="text-green-500 mb-2">--Why Choose Us</p>
+          <p className="text-teal-400 mb-2">--Why Choose Us</p>
           <h2 className="font-bold text-2xl md:text-5xl">
             Unlock The Potential <br /> Of Your Business.
           </h2>
@@ -37,11 +37,11 @@ const Choose = () => {
 
             {/* Logo & Heading */}
             <h2 className="text-2xl font-bold flex items-center">
-              <span className="text-green-500 mr-1">●</span> Crafted M<span className="text-rose-500">a</span>rt Agency
+              <span className="text-teal-400 mr-1">●</span> Crafted M<span className="text-rose-500">a</span>rt Agency
             </h2>
             <h3 className="mt-6 text-lg font-semibold">
               Best Creative IT Agency And Solutions{" "}
-              <span className="text-green-500">Since 2020.</span>
+              <span className="text-teal-400">Since 2020.</span>
             </h3>
 
             {/* Description */}
@@ -57,7 +57,7 @@ const Choose = () => {
             </div>
 
             {/* Button */}
-            <button className="absolute bottom-4 right-4 flex items-center gap-2 border border-gray-600 px-4 py-2 rounded-full text-sm hover:bg-green-500 hover:text-black transition">
+            <button className="absolute bottom-4 right-4 flex items-center gap-2 border border-gray-600 px-4 py-2 rounded-full text-sm hover:bg-teal-400 hover:text-black transition">
               About More <FiArrowRight />
             </button>
           </div>
@@ -86,7 +86,7 @@ const Choose = () => {
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-6">
                 {/* Circle Percentage */}
-                <div className="px-5 py-6 text-green-500 rounded-full border-2 border-gray-700 flex items-center justify-center text-sm font-bold">
+                <div className="px-5 py-6 text-teal-400 rounded-full border-2 border-gray-700 flex items-center justify-center text-sm font-bold">
                   {item.perRate}%
                 </div>
                 {/* Text */}

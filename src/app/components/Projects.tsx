@@ -129,8 +129,8 @@ const gridRef = useRef<HTMLDivElement | null>(null);
               onClick={() => setActiveCategory(cat)}
               className={`px-4 md:px-5 py-2 text-[10px] md:text-sm lg:text-base rounded-full cursor-pointer transition-colors ${
                 activeCategory === cat
-                  ? "bg-green-500 text-black font-bold"
-                  : "bg-gray-950 hover:bg-green-500 hover:text-black"
+                  ? "bg-teal-400 text-black font-bold"
+                  : "bg-gray-950 hover:bg-teal-400 hover:text-black"
               }`}
             >
               {cat}
@@ -167,7 +167,7 @@ const gridRef = useRef<HTMLDivElement | null>(null);
                   />
                   <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent w-full">
                     <h3 className="text-base md:text-lg font-bold">{project.title}</h3>
-                    <p className="text-xs md:text-sm text-green-500">{project.category}</p>
+                    <p className="text-xs md:text-sm text-teal-400">{project.category}</p>
                   </div>
                 </Link>
               </motion.div>

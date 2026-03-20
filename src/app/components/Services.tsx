@@ -8,14 +8,14 @@ const services = [
     title: "Web Development",
     description:
       "Web development is the process of creating websites and web applications for the internet or mobile application.",
-    icon: <FaCode className="text-green-400 text-4xl" />,
+    icon: <FaCode className="text-teal-400 text-4xl" />,
   },
   {
     id: "02",
     title: "Digital Marketing",
     description:
       "Digital Marketing is the process of promoting products, services, or brands through online channels such as search engines, social media, email, and websites.",
-    icon: <FaCloud className="text-green-400 text-4xl" />,
+    icon: <FaCloud className="text-teal-400 text-4xl" />,
   },
 ];
 
@@ -33,14 +33,14 @@ export default function ServicesSection() {
             <Link
               key={service.id}
               href="/service"
-              className="bg-[#111113] rounded-lg p-8 flex flex-col justify-between relative overflow-hidden group hover:shadow-lg hover:shadow-green-500/20 transition duration-300"
+              className="bg-[#111113] rounded-lg p-8 flex flex-col justify-between relative overflow-hidden group hover:shadow-lg hover:shadow-teal-400/20 transition duration-300"
             >
               <span className="text-gray-600 text-3xl font-bold">
                 {service.id}
               </span>
               <h3 className="text-xl font-bold mt-4">{service.title}</h3>
               <p className="text-gray-400 mt-3">{service.description}</p>
-              <span className="mt-4 text-green-400 font-semibold inline-flex items-center hover:underline">
+              <span className="mt-4 text-teal-400 font-semibold inline-flex items-center hover:underline">
                 LEARN MORE →
               </span>
               <div className="absolute bottom-4 right-4 opacity-20 group-hover:opacity-40 transition">

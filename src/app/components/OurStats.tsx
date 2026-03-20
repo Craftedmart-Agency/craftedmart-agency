@@ -4,25 +4,25 @@ import { FaAward, FaUsers, FaCogs, FaMedal } from "react-icons/fa";
 export default function OurStats() {
   const stats = [
     {
-      icon: <FaMedal className="text-green-400 text-4xl mb-3" />,
+      icon: <FaMedal className="text-teal-400 text-4xl mb-3" />,
       value: "5",
       label: "Years",
       desc: "Working With Passion",
     },
     {
-      icon: <FaUsers className="text-green-400 text-4xl mb-3" />,
+      icon: <FaUsers className="text-teal-400 text-4xl mb-3" />,
       value: "150+",
       label: "Customers",
       desc: "Satisfied Customer",
     },
     {
-      icon: <FaCogs className="text-green-400 text-4xl mb-3" />,
+      icon: <FaCogs className="text-teal-400 text-4xl mb-3" />,
       value: "400+",
       label: "Projects",
       desc: "We Have Completed",
     },
     {
-      icon: <FaAward className="text-green-400 text-4xl mb-3" />,
+      icon: <FaAward className="text-teal-400 text-4xl mb-3" />,
       value: "5",
       label: "Awards",
       desc: "Achievement For Service",

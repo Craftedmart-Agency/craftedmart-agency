@@ -116,12 +116,12 @@ export default function ProjectDetails() {
                   <div
                     key={index}
                     className="relative bg-gray-900 border border-gray-800 rounded-lg p-6 
-                       hover:border-green-500 hover:shadow-lg hover:shadow-green-500/10
+                       hover:border-teal-400 hover:shadow-lg hover:shadow-teal-400/10
                        transition-all duration-300 group"
                   >
                     {item.icon}
-                    <p className="text-green-500 font-semibold">{item.step}</p>
-                    <h3 className="text-xl text-white  font-bold mt-1 group-hover:text-green-400 transition">
+                    <p className="text-teal-400 font-semibold">{item.step}</p>
+                    <h3 className="text-xl text-white  font-bold mt-1 group-hover:text-teal-400 transition">
                       {item.title}
                     </h3>
                     <p className="text-gray-400 mt-2 text-sm leading-relaxed">

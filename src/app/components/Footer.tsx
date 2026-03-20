@@ -12,18 +12,18 @@ export default function Footer() {
         <div className="flex flex-col items-start md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-6 md:mb-8">
           {/* Logo */}
           <div className="flex items-center gap-2 ">
-            <span className="text-green-500 text-2xl font-bold">●</span>
+            <span className="text-teal-400 text-2xl font-bold">●</span>
             <h2 className="md:text-2xl font-bold">Crafted M<span className="text-rose-400">a</span>rt Agency</h2>
           </div>
 
           {/* Call Any Time */}
           <div className="flex items-center gap-3 mt-4 md:mt-0">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <HiOutlinePhone className="text-green-500 text-xl" />
+            <div className="bg-teal-400/10 p-2 rounded-full">
+              <HiOutlinePhone className="text-teal-400 text-xl" />
             </div>
             <div>
               <p className="text-xs text-gray-400">Call Any Time</p>
-              <p className="text-green-500 font-semibold text-xs md:text-base">+880-1815-149399</p>
+              <p className="text-teal-400 font-semibold text-xs md:text-base">+880-1815-149399</p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="col-span-2">
             {/* Address */}
             <div className="mb-4">
-              <div className="flex items-center gap-2 text-green-500">
+              <div className="flex items-center gap-2 text-teal-400">
                 <HiOutlineLocationMarker />
                 <h3 className="font-semibold">Address</h3>
               </div>
@@ -45,7 +45,7 @@ export default function Footer() {
 
             {/* Say Hello */}
             <div className="mb-4">
-              <div className="flex items-center gap-2 text-green-500">
+              <div className="flex items-center gap-2 text-teal-400">
                 <HiOutlineMail />
                 <h3 className="font-semibold">Say Hello</h3>
               </div>
@@ -61,7 +61,7 @@ export default function Footer() {
                 placeholder="Enter your email..."
                 className="bg-transparent border border-gray-700 p-2 w-full focus:outline-none text-sm"
               />
-              <button className="bg-green-500 px-4 flex items-center justify-center">
+              <button className="bg-teal-400 px-4 flex items-center justify-center">
                 →
               </button>
             </div>
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom Bar */}
 <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
   <p>
-    © Copyright 2026 <span className="text-green-500">Craftedmart Agency</span> | All rights reserved.
+    © Copyright 2026 <span className="text-teal-400">Craftedmart Agency</span> | All rights reserved.
   </p>
   <div className="flex gap-4 mt-4 md:mt-0">
     <a
@@ -118,10 +118,10 @@ export default function Footer() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaFacebookF className="hover:text-green-500 cursor-pointer" />
+      <FaFacebookF className="hover:text-teal-400 cursor-pointer" />
     </a>
-    <FaTwitter className="hover:text-green-500 cursor-pointer" />
-    <FaPinterestP className="hover:text-green-500 cursor-pointer" />
+    <FaTwitter className="hover:text-teal-400 cursor-pointer" />
+    <FaPinterestP className="hover:text-teal-400 cursor-pointer" />
   </div>
 </div>
 

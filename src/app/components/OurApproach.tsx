@@ -46,7 +46,7 @@ export default function OurApproach() {
             
                 <div className="flex items-center justify-center gap-5">
               <div className="flex flex-col items-center text-center">
-                <div className="w-4 h-4 rounded-full bg-green-500 mb-2"></div>
+                <div className="w-4 h-4 rounded-full bg-teal-400 mb-2"></div>
                 <h4 className="font-bold text-sm mb-1">Customized Solutions</h4>
                 <p className="text-gray-400 text-sm text-center">
                   Tailored services to fit your business needs perfectly.
@@ -54,7 +54,7 @@ export default function OurApproach() {
               </div>
 
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 rounded-full bg-green-500 mb-2"></div>
+                <div className="w-4 h-4 rounded-full bg-teal-400 mb-2"></div>
                 <h4 className="font-bold text-sm mb-1">Quality Reliability</h4>
                 <p className="text-gray-400 text-sm text-center">
                   Dependable results delivered with excellence.
@@ -81,7 +81,7 @@ export default function OurApproach() {
               <span className="text-4xl">5</span>
               <span className="text-lg">Years</span>
               {/* Optional surrounding text effect */}
-              <div className="absolute inset-0 flex items-center justify-center text-xs text-green-900 opacity-50 rotate-[20deg]">
+              <div className="absolute inset-0 flex items-center justify-center text-xs text-teal-900 opacity-50 rotate-[20deg]">
                 # WE PROVIDED IT SERVICES #
               </div>
             </div>

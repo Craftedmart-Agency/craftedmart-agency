@@ -61,14 +61,14 @@ export default function CaseStudy() {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <p className="text-green-400 uppercase text-sm font-semibold">
+                <p className="text-teal-400 uppercase text-sm font-semibold">
                   {item.category}
                 </p>
                 <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                 <p className="text-gray-400 mt-2">{item.description}</p>
                 <a
                   href={item.link}
-                  className="mt-3 inline-block text-green-400 font-semibold hover:underline"
+                  className="mt-3 inline-block text-teal-400 font-semibold hover:underline"
                 >
                   Learn More →
                 </a>
@@ -88,14 +88,14 @@ export default function CaseStudy() {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <p className="text-green-400 uppercase text-sm font-semibold">
+                <p className="text-teal-400 uppercase text-sm font-semibold">
                   {item.category}
                 </p>
                 <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                 <p className="text-gray-400 mt-2">{item.description}</p>
                 <a
                   href={item.link}
-                  className="mt-3 inline-block text-green-400 font-semibold hover:underline"
+                  className="mt-3 inline-block text-teal-400 font-semibold hover:underline"
                 >
                   Learn More →
                 </a>

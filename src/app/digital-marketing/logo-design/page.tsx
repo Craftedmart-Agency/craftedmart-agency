@@ -41,7 +41,7 @@ export default function LogoDesignGallery() {
               alt={img}
               width={180}
               height={180}
-              className="rounded-xl select-none pointer-events-none border-2 border-green-300 group-hover:border-green-500 transition-all duration-300 z-20"
+              className="rounded-xl select-none pointer-events-none border-2 border-green-300 group-hover:border-teal-400 transition-all duration-300 z-20"
               draggable={false}
               loading="lazy"
             />

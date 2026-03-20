@@ -22,7 +22,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ icon, title, description, points }: ServiceCardProps) => {
   return (
     <div className="bg-[#0f1719] p-6 rounded-lg shadow-lg border border-gray-800 hover:scale-105 transition-transform duration-300">
-      <div className="text-green-400 text-4xl mb-4">{icon}</div>
+      <div className="text-teal-400 text-4xl mb-4">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-400 text-sm mb-4">{description}</p>
       <ul className="space-y-1">
