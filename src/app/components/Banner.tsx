@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import Image from "next/image";
-import banner from "@/assets/banner.png";
+import banner from "@/assets/banner.jpg";
 import Button from "./shared/Button";
 import Link from "next/link";
 import Review from "./Review";
@@ -71,14 +71,14 @@ const Banner = () => {
   return (
     <section
       ref={bannerRef}
-      className="bg-[#0e0e0e] text-white px-6 py-6 md:py-16 overflow-hidden"
+      className="bg-[#0f0e0eb4] text-white px-6 py-6 md:py-16 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Text Side */}
         <div className="z-10">
           <div className="block min-h-[140px] md:min-h-[180px]">
             <h1 className="text-3xl md:text-6xl font-bold leading-tight pt-5 md:pt-0">
-              <motion.span className="text-teal-400">{displayText}</motion.span>
+              <motion.span className="text-white">{displayText}</motion.span>
               <CursorBlinker />
             </h1>
           </div>
@@ -99,8 +99,8 @@ const Banner = () => {
               <Button text="Free Consult" />
             </Link>
             <Link href="/websites">
-              <div className="border border-teal-400 text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-3 rounded transition-all duration-300 font-medium">
-                View All Projects
+              <div className="border text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-[10px] rounded transition-all duration-300 font-semibold">
+              VIEW PROJECTS
               </div>
             </Link>
           </div>

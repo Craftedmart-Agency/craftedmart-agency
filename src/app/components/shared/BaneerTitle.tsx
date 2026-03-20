@@ -5,7 +5,7 @@ import Aboutbanner from "@/assets/breadcrumb-right-img.png"
 
 export default function BannerTitle({title}:{title: string}) {
   return (
-    <section className="relative w-full bg-gradient-to-l from-green-800 to-black text-white py-32">
+    <section className="relative w-full bg-gradient-to-l from-gray-800 to-black text-white py-32">
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Title */}
         <h1 className="text-4xl font-extrabold mb-4">{title}</h1>

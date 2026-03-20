@@ -34,7 +34,7 @@ export default function OurStats() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
         {/* Left Title */}
         <div className="lg:col-span-1">
-          <h2 className="text-2xl md:text-4xl font-bold mb-3">Our States</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-3">Our Stats</h2>
           <p className="text-gray-500">
             We provide innovative solutions that drive growth and deliver measurable results for your business.
           </p>
