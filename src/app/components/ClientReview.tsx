@@ -8,6 +8,10 @@ import Image from "next/image";
 import test1 from "@/assets/testi-01.png";
 import test2 from "@/assets/testi-02.png";
 import test3 from "@/assets/testi-03.png";
+import test4 from "@/assets/testi-04.png";
+import test5 from "@/assets/testi-05.png";
+import test6 from "@/assets/testi-06.png";
+import test7 from "@/assets/testi-07.png";
 import google from "@/assets/google.svg";;
 import trust from "@/assets/trustpilot.svg";
 import yelp from "@/assets/yelp-184-svgrepo-com.svg";
@@ -59,7 +63,7 @@ const testimonials = [
       "The project was delivered on time and the quality was impressive. Will hire again.",
     name: "Michael Carter",
     title: "CTO At websolutions.io",
-    avatar: test1,
+    avatar: test4,
   },
   {
     id: 5,
@@ -70,7 +74,7 @@ const testimonials = [
       "They understood our needs perfectly and created something truly amazing.",
     name: "Emily Johnson",
     title: "Marketing Head At visionmedia.com",
-    avatar: test2,
+    avatar: test5,
   },
   {
     id: 6,
@@ -81,7 +85,7 @@ const testimonials = [
       "Great collaboration from start to finish. Would recommend to anyone.",
     name: "David Smith",
     title: "Freelancer",
-    avatar: test3,
+    avatar: test6,
   },
   {
     id: 7,
@@ -92,7 +96,7 @@ const testimonials = [
       "Everything was smooth and easy. Fantastic results, exactly what I wanted.",
     name: "Jessica Brown",
     title: "Entrepreneur",
-    avatar: test1,
+    avatar: test7,
   },
 ];
 

@@ -1,10 +1,12 @@
 import Banner from "./components/Banner";
-import CaseStudy from "./components/Casestudy";
+// import CaseStudy from "./components/Casestudy";
 import Choose from "./components/Choose";
 import ClientReview from "./components/ClientReview";
 import ContactSection from "./components/ContactSection";
 import ServicesSection from "./components/Services";
 import WhatWeDo from "./components/Whatwedo";
+import Projects from "./components/Projects";
+import ProjectTitle from "./components/ProjectTitle";
 
 
 
@@ -14,7 +16,9 @@ export default function Home() {
       <Banner/>
       <Choose/>
       <ServicesSection/>
-      <CaseStudy/>
+      {/* <CaseStudy/> */}
+      <ProjectTitle/>
+      <Projects/>
       <ClientReview/>
       <WhatWeDo/>
       <ContactSection/>
