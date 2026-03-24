@@ -7,6 +7,7 @@ import ServicesSection from "./components/Services";
 import WhatWeDo from "./components/Whatwedo";
 import Projects from "./components/Projects";
 import ProjectTitle from "./components/ProjectTitle";
+import PricingPlans from "./pricing/page";
 
 
 
@@ -19,7 +20,8 @@ export default function Home() {
       {/* <CaseStudy/> */}
       <ProjectTitle/>
       <Projects/>
-      <ClientReview/>
+      {/* <ClientReview/> */}
+      <PricingPlans/>
       <WhatWeDo/>
       <ContactSection/>
     </div>

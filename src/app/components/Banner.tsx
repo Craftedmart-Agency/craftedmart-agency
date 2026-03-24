@@ -106,7 +106,7 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* Right Image Side */}
+        {/* Right Image Side- this is the lcp content */}
         <div
           className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-[30px]"
           style={{ clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)" }}
