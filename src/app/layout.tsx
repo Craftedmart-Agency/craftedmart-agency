@@ -7,6 +7,7 @@ import LoadingProvider from "./providers/LoadingProvider";
 import { AuthProvider } from "./context/AuthContext";
 import { ModalProvider } from "./components/Modal/ModalProvider";
 import WhatsAppButton from './components/WhatsappButton';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 export const metadata: Metadata = {
   title: "Craftedmart Agency",
   description:
@@ -42,6 +43,7 @@ export default function RootLayout({
             </LoadingProvider>
           </ModalProvider>
         </AuthProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
