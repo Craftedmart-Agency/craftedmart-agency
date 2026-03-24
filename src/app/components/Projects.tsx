@@ -4,14 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { Project } from "@/data/projects";
 
-interface Project {
-  id: number;
-  category: string;
-  title: string;
-  image: string;
-  link: string;
-}
+
 
 const categories = [
   "All",
@@ -108,14 +103,23 @@ const gridRef = useRef<HTMLDivElement | null>(null);
       : projects.filter((p) => p.category === activeCategory);
 
        // Scroll down when category changes
-  useEffect(() => {
+ // 1. Prothome ekta ref nite hobe track korar jonne
+const isFirstRender = useRef(true);
+
+useEffect(() => {
+  // 2. Jodi prothom bar render hoy, tobe kichu korbe na
+  if (isFirstRender.current) {
+    isFirstRender.current = false;
+    return;
+  }
+
   if (typeof window !== "undefined") {
-    const isMobile = window.innerWidth <= 768; // mobile breakpoint
+    const isMobile = window.innerWidth <= 768;
     if (isMobile && gridRef.current) {
       gridRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
-}, [activeCategory]);
+}, [activeCategory]); // Shudhu category change holei kaj korbe
 
 
   return (
