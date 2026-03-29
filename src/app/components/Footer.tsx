@@ -13,7 +13,9 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2 ">
             <span className="text-teal-400 text-2xl font-bold">●</span>
-            <h2 className="md:text-2xl font-bold">Crafted M<span className="text-rose-400">a</span>rt Agency</h2>
+            <h2 className="md:text-2xl font-bold">
+              Crafted M<span className="text-rose-400">a</span>rt Agency
+            </h2>
           </div>
 
           {/* Call Any Time */}
@@ -23,7 +25,9 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-xs text-gray-400">Call Any Time</p>
-              <p className="text-teal-400 font-semibold text-xs md:text-base">+880-1815-149399</p>
+              <p className="text-teal-400 font-semibold text-xs md:text-base">
+                +880-1815-149399
+              </p>
             </div>
           </div>
         </div>
@@ -39,7 +43,9 @@ export default function Footer() {
                 <h3 className="font-semibold">Address</h3>
               </div>
               <p className="text-gray-400 text-sm mt-1">
-                168/170, Burischar Bazar, NazumiaHat, Hathazari, Chittagong Bangladeash
+                HQ Suite: CM-114, 1st Floor Burischar,
+                Nazumiahat, Chittagong, <br/> Fax: +880 31
+                7689908
               </p>
             </div>
 
@@ -49,8 +55,12 @@ export default function Footer() {
                 <HiOutlineMail />
                 <h3 className="font-semibold">Say Hello</h3>
               </div>
-              <p className="text-gray-400 text-sm mt-1">info@craftedmartagency.com</p>
-              <p className="text-gray-400 text-sm">info@craftedmartsupport.com</p>
+              <p className="text-gray-400 text-sm mt-1">
+                info@craftedmartagency.com
+              </p>
+              <p className="text-gray-400 text-sm">
+                info@craftedmartsupport.com
+              </p>
             </div>
 
             {/* Newsletter */}
@@ -96,7 +106,11 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h3 className="font-bold mb-3">Resources</h3>
-              <Link href="/terms"><li className="text-red-400 mb-1 list-none text-sm">Terms & Conditions</li></Link>
+            <Link href="/terms">
+              <li className="text-red-400 mb-1 list-none text-sm">
+                Terms & Conditions
+              </li>
+            </Link>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>Support Area</li>
               <li>Support Policy</li>
@@ -108,23 +122,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-<div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
-  <p>
-    © Copyright 2026 <span className="text-teal-400">Craftedmart Agency</span> | All rights reserved.
-  </p>
-  <div className="flex gap-4 mt-4 md:mt-0">
-    <a
-      href="https://www.facebook.com/Craftedmartagency"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaFacebookF className="hover:text-teal-400 cursor-pointer" />
-    </a>
-    <FaTwitter className="hover:text-teal-400 cursor-pointer" />
-    <FaPinterestP className="hover:text-teal-400 cursor-pointer" />
-  </div>
-</div>
-
+        <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
+          <p>
+            © Copyright 2026{" "}
+            <span className="text-teal-400">Craftedmart Agency</span> | All
+            rights reserved.
+          </p>
+          <div className="flex gap-4 mt-4 md:mt-0">
+            <a
+              href="https://www.facebook.com/Craftedmartagency"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-teal-400 cursor-pointer" />
+            </a>
+            <FaTwitter className="hover:text-teal-400 cursor-pointer" />
+            <FaPinterestP className="hover:text-teal-400 cursor-pointer" />
+          </div>
+        </div>
       </div>
     </footer>
   );
