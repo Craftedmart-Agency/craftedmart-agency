@@ -183,13 +183,19 @@ const SignUpPage: React.FC = () => {
                 className="text-xs text-gray-400 cursor-pointer leading-tight"
               >
                 I agree with{" "}
-                <span className="text-[#3ed8b8] underline">
+                <Link
+                  href="/terms"
+                  className="text-[#3ed8b8] underline hover:text-[#32c0a3]"
+                >
                   Terms and Conditions
-                </span>{" "}
+                </Link>{" "}
                 and{" "}
-                <span className="text-[#3ed8b8] underline">
+                <Link
+                  href="/privacy"
+                  className="text-[#3ed8b8] underline hover:text-[#32c0a3]"
+                >
                   Privacy Policies
-                </span>
+                </Link>
               </label>
             </div>
 

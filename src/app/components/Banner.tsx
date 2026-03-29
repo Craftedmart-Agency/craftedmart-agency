@@ -99,7 +99,7 @@ const Banner = () => {
               <Button text="Free Consult" />
             </Link>
             <Link href="/websites">
-              <div className="border text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-[10px] rounded transition-all duration-300 font-semibold">
+              <div className="border border-teal-200 text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-[10px] rounded transition-all duration-300 font-semibold">
               VIEW PROJECTS
               </div>
             </Link>

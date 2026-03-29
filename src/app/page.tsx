@@ -20,7 +20,6 @@ export default function Home() {
       {/* <CaseStudy/> */}
       <ProjectTitle/>
       <Projects/>
-      {/* <ClientReview/> */}
       <PricingPlans/>
       <WhatWeDo/>
       <ContactSection/>
