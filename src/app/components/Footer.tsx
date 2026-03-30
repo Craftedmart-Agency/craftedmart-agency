@@ -6,7 +6,7 @@ import { HiOutlineMail, HiOutlineLocationMarker, HiOutlinePhone } from "react-ic
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white pt-4 md:pt-12">
+    <footer className="bg-black-900/95 backdrop-blur-sm shadow-xl text-white pt-4 md:pt-12">
       <div className="container mx-auto px-6 md:px-12">
         {/* Top Bar with Logo + Call Any Time */}
         <div className="flex flex-col items-start md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-6 md:mb-8">
@@ -43,9 +43,8 @@ export default function Footer() {
                 <h3 className="font-semibold">Address</h3>
               </div>
               <p className="text-gray-400 text-sm mt-1">
-                HQ Suite: CM-114, 1st Floor Burischar,
-                Nazumiahat, Chittagong, <br/> Fax: +880 31
-                7689908
+                HQ Suite: CM-114, 1st Floor Burischar, Nazumiahat, Chittagong,{" "}
+                <br /> Fax: +880 31 7689908
               </p>
             </div>
 
@@ -122,7 +121,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-sm">
+        <div className="flex flex-col md:flex-row justify-between items-center py-4 text-gray-500 text-xs md:text-sm">
           <p>
             © Copyright 2026{" "}
             <span className="text-teal-400">Craftedmart Agency</span> | All

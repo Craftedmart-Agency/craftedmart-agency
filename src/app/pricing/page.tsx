@@ -4,7 +4,7 @@ const packages = [
   {
     badge: "Basic",
     name: "Starter Web Pack",
-    price: "৳৯,৯৯৯",
+    price: "৳6,999",
     gradient: "from-[#45CAFF] to-[#0147FF]",
     buttonText: "Get Started",
     buttonBg: "bg-[#111827]",
@@ -21,7 +21,7 @@ const packages = [
     badge: "Most Popular",
     isPopular: true,
     name: "Growth & Business Pack",
-    price: "৳১৪,৯৯৯",
+    price: "৳14,999",
     gradient: "from-[#575757] to-[#111111]",
     buttonText: "Upgrade Now",
     buttonBg: "bg-[#45CAFF]",
@@ -38,7 +38,7 @@ const packages = [
   {
     badge: "Premium",
     name: "Pro For Corporate",
-    price: "৳২৯,৯৯৯",
+    price: "৳29,999",
     gradient: "from-[#FF97C1] to-[#FF61A6]",
     buttonText: "Choose Plan",
     buttonBg: "bg-[#111827]",
@@ -56,7 +56,7 @@ const packages = [
 
 export default function PricingPlans() {
   return (
-    <div className="bg-black pb-20 px-4 min-h-screen ">
+    <div className="bg-black py-20 px-4 min-h-screen ">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-24 text-white uppercase tracking-wider">
         Pricing & Packages
       </h2>
@@ -71,7 +71,7 @@ export default function PricingPlans() {
           >
             {/* Main Card Container */}
             <div
-              className={`h-full rounded-[28px] flex flex-col p-8 text-white bg-gradient-to-b ${pkg.gradient}`}
+              className={`h-full rounded-[28px] flex flex-col p-8 text-white bg-gradient-to-b  ${pkg.gradient}`}
             >
               {/* Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
