@@ -95,7 +95,7 @@ export const projects: Project[] = [
 ];
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState("E-commerce");
+  const [activeCategory, setActiveCategory] = useState("Travel & Tourism");
 const gridRef = useRef<HTMLDivElement | null>(null);
   const filteredProjects =
     activeCategory === "All"

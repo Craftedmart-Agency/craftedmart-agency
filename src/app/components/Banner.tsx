@@ -77,7 +77,7 @@ const Banner = () => {
         {/* Left Text Side */}
         <div className="z-10">
           <div className="block min-h-[140px] md:min-h-[180px]">
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight pt-5 md:pt-0">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight pt-5 md:pt-0">
               <motion.span className="text-white">{displayText}</motion.span>
               <CursorBlinker />
             </h1>
