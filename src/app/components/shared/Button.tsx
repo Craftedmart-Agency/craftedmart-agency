@@ -2,11 +2,17 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ text = 'Proceed'}) => {
+type ButtonProps = {
+  text?: string;
+  disabled?: boolean;
+};
+
+const Button = ({ text = 'Proceed', disabled } : ButtonProps) => {
   return (
     <button
       className={`custom-button`}
       style={{ "--content": `'${text}'` } as React.CSSProperties}
+      disabled={disabled}
     >
       <div className="left"></div>
         {text}
