@@ -113,7 +113,11 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>Support Area</li>
               <li>Support Policy</li>
-              <li>Privacy Policy</li>
+              <Link href="/privacy">
+                <li className="text-red-400 mb-1 list-none text-sm">
+                  Privacy Policy
+                </li>
+              </Link>
               <li>Career</li>
               <li>Pricing Plan</li>
             </ul>

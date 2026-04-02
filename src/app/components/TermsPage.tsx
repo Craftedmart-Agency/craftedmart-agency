@@ -5,11 +5,11 @@ const TermsPage = () => {
   return (
     <section className="text-white min-h-screen py-16 px-6 md:px-20">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-teal-400">
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-400">
           Terms & Conditions
         </h1>
         <p className="text-gray-300 mb-6">
-          Last updated: August 2025
+          Last updated: April 2026
         </p>
 
         <p className="mb-6 text-gray-300">
@@ -101,7 +101,7 @@ const TermsPage = () => {
           If you have questions regarding these Terms & Conditions, contact us at:
         </p>
         <ul className="list-disc list-inside text-gray-300">
-          <li>Email: webinnovation.bd@gmail.com</li>
+          <li>Email: info@craftedmartagency.com</li>
           <li>Phone: +880 1815 149399</li>
         </ul>
       </div>

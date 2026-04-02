@@ -7,7 +7,7 @@ import { FaLightbulb, FaLaptopCode, FaRocket } from "react-icons/fa";
 import BannerTitle from "@/app/components/shared/BaneerTitle";
 import Button from "@/app/components/shared/Button";
 import Link from "next/link";
-import { get } from "http";
+
 export default function ProjectDetails() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
@@ -65,7 +65,7 @@ export default function ProjectDetails() {
       <div className="max-w-6xl mx-auto px-4 pt-12">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
           {/* Two left images */}
-          <div className="grid grid-cols-1 gap-4 lg:col-span-3">
+          <div className="grid grid-cols-1 gap-4 lg:col-span-5 mx-auto ">
             <Image
               src={project.image}
               alt={project.title}
@@ -88,26 +88,24 @@ export default function ProjectDetails() {
                   Projects Overview
                 </h2>
                 <Link
-                 href={project?.link}
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 >
+                  href={project?.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button text="Live Demo" />
                 </Link>
               </div>
               <p className="text-gray-300 mb-4">
-                Our projects are built on a foundation of innovation, precision,
-                and purpose. Each initiative is carefully designed to address
-                real-world needs while driving measurable impact. We emphasize
-                seamless execution, from concept to completion, ensuring every
-                detail aligns with both client expectations and long-term goals.
+                We build innovative, purpose-driven digital solutions designed
+                to deliver measurable business impact. From concept to
+                deployment, we focus on seamless execution to ensure every
+                detail aligns with your long-term goals.
               </p>
               <p className="text-gray-300">
-                Through a combination of creativity, technical expertise, and
-                strategic thinking, we deliver solutions that are not only
-                functional but also sustainable and adaptable. Collaboration
-                remains at the heart of our process, enabling us to transform
-                challenges into opportunities and ideas into tangible results.
+                By combining technical expertise with strategic design, we
+                transform complex challenges into scalable, high-performing
+                results. Collaboration is at the heart of our process, turning
+                your vision into digital reality.
               </p>
             </section>
 
@@ -195,7 +193,9 @@ export default function ProjectDetails() {
                 <h2 className="text-white font-bold text-2xl">Ready to</h2>
                 <h3 className="text-gray-300 text-2xl mb-6">work with us?</h3>
                 <div>
-                  <Link href="/#contactme"><Button text="Get a quote"/></Link>
+                  <Link href="/#contactme">
+                    <Button text="Get a quote" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -236,7 +236,9 @@ export default function ProjectDetails() {
                     <span className="text-emerald-500 text-xs font-semibold block">
                       PREVIOUS
                     </span>
-                    <p className="font-bold leading-snug">{prevProject.title}</p>
+                    <p className="font-bold leading-snug">
+                      {prevProject.title}
+                    </p>
                   </div>
                 </Link>
               ) : (
@@ -253,7 +255,9 @@ export default function ProjectDetails() {
                     <span className="text-emerald-500 text-xs font-semibold block">
                       NEXT
                     </span>
-                    <p className="font-bold leading-snug">{nextProject.title}</p>
+                    <p className="font-bold leading-snug">
+                      {nextProject.title}
+                    </p>
                   </div>
                   <Image
                     src={nextProject.image}

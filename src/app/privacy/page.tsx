@@ -1,7 +1,7 @@
 
 export default function PrivacyPolicy() {
   return (
-    <div className="p-10 max-w-4xl mx-auto min-h-screen bg-black/50 backdrop-blur-lg shadow-3xl text-white">
+    <div className="p-10 md:p-20 max-w-4xl mx-auto min-h-screen bg-black/50 backdrop-blur-lg shadow-3xl text-white">
       <h1 className="text-3xl  font-bold mb-4">Privacy Policy</h1>
       <p>
         Welcome to Crafted Mart Agency. We value your privacy. This policy
@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
           Your data is used solely to provide personalized agency services.
         </li>
       </ul>
-      <p className="mt-4">Contact us at: developer.shakil.ctg@gmail.com</p>
+      <p className="mt-4">Contact us at: developer.shakil.ctg@gmail.com or info@craftedmartagency.com</p>
     </div>
   );
 }
