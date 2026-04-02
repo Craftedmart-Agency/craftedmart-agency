@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import Image from "next/image";
-import banner from "@/assets/banner.jpg";
 import Button from "./shared/Button";
 import Link from "next/link";
 import Review from "./Review";
@@ -112,11 +111,13 @@ const Banner = () => {
           style={{ clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)" }}
         >
           <Image
-            src={banner}
+            src="/banner.jpg"
             alt="Team Work"
             fill
             className="object-cover"
             priority
+            fetchPriority="high"
+            unoptimized={true}
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div

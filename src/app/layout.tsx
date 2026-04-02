@@ -10,7 +10,7 @@ import WhatsAppButton from './components/WhatsappButton';
 export const metadata: Metadata = {
   title: "Craftedmart Agency",
   description:
-    "CraftedMart Agency – Web, Branding & Digital Solutions",
+    "Craftedmart Agency provides web development, UI/UX design, branding, and SEO services to help businesses grow with modern, high-performing websites.",
   icons: {
     icon: "/logo.png",
   },
@@ -28,8 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* LCP Image Preload */}
+        <link
+          rel="preload"
+          as="image"
+          href="/banner.jpg" // your live image site path
+          fetchPriority="high"
+        />
+      </head>
       <body
-        // className={`${poppins.className} antialiased pt-16 md:pt-24 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat bg-fixed z-20`}
         className={`${poppins.className} antialiased mt-24 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat bg-fixed top-6 z-20`}
       >
         <AuthProvider>
@@ -37,7 +45,7 @@ export default function RootLayout({
             <LoadingProvider>
               <Navbar />
               <main>{children}</main>
-              <WhatsAppButton/>
+              <WhatsAppButton />
               <Footer />
             </LoadingProvider>
           </ModalProvider>
