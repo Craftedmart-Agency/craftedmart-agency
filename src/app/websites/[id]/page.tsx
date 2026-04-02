@@ -7,6 +7,7 @@ import { FaLightbulb, FaLaptopCode, FaRocket } from "react-icons/fa";
 import BannerTitle from "@/app/components/shared/BaneerTitle";
 import Button from "@/app/components/shared/Button";
 import Link from "next/link";
+import { get } from "http";
 export default function ProjectDetails() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
@@ -46,12 +47,16 @@ export default function ProjectDetails() {
     },
   ];
 
+  const getRandomDuration = () => {
+    const days = Math.floor(Math.random() * (13 - 7 + 1)) + 7;
+    return `${days} Days`;
+  };
   const projectInfo = [
-    { label: "Client", value: "Mohammed Parvez" },
-    { label: "Company", value: "Texture Inc" },
-    { label: "Location", value: "7 Lake Street, Chittagong" },
+    { label: "Name", value: project.title },
+    { label: "Category", value: project.category },
+    { label: "ID", value: "CM"+  project.id + "1" },
     { label: "Project Type", value: "Desktop Mockup" },
-    { label: "Duration", value: "2 Months" },
+    { label: "Duration", value: getRandomDuration() },
   ];
 
   return (
