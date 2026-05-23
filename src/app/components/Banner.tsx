@@ -98,7 +98,7 @@ const Banner = () => {
               <Button text="Free Consult" />
             </Link>
             <Link href="/websites">
-              <div className="border border-teal-400 text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-[10px] rounded transition-all duration-300 font-semibold">
+              <div className="border border-teal-400/20 text-gray-400 hover:bg-teal-400 hover:text-black px-12 py-[10px] rounded transition-all duration-300 font-semibold">
               VIEW PROJECTS
               </div>
             </Link>
@@ -111,7 +111,7 @@ const Banner = () => {
           style={{ clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)" }}
         >
           <Image
-            src="/banner.jpg"
+            src="/banner.png"
             alt="Team Work"
             fill
             className="object-cover"
@@ -121,7 +121,7 @@ const Banner = () => {
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div
-            className="absolute inset-0 bg-teal-400/30"
+            className="absolute inset-0 bg-teal-400/20"
             style={{
               clipPath: "polygon(20% 0, 30% 0, 60% 100%, 40% 100%)",
             }}

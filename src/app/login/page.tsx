@@ -108,7 +108,7 @@ export default function LoginPage() {
       {/* Main content: transparent login card */}
       <main className="flex-grow flex items-center justify-center relative z-10 px-4 py-20 md:py-0 md:min-h-[80vh]">
         {/* Transparent card with frosted-glass-like effects */}
-        <div className="bg-black opacity-80 backdrop-blur-sm shadow-xl border border-[#ffffff15] rounded-3xl p-8 shadow-2xl w-full max-w-[420px]">
+        <div className="bg-black opacity-80 backdrop-blur-sm border border-[#ffffff15] rounded-3xl p-8 shadow-2xl w-full max-w-[420px]">
           {/* Card Title */}
           <h2 className="text-xl md:text-3xl font-semibold text-center mb-6">
             Login Here

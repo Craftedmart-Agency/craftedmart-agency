@@ -9,3 +9,4 @@ export const createUserInDb = async (data: UserPayload) => {
   const res = await axiosPublic.post("/api/users", data);
   return res.data;
 };
+

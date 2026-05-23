@@ -92,13 +92,13 @@ const Choose = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Card */}
           <div className="bg-[#111] p-6 md:p-10 lg:p-16 relative rounded-lg border border-gray-800 overflow-hidden min-h-[400px]">
-            <div className="absolute top-0 right-0 w-20 h-20 bg-green-900 opacity-40"></div>
+            <div className="absolute top-0 right-0 w-16 h-16 bg-green-900 opacity-40"></div>
 
-            <h2 className="text-2xl font-bold flex items-center">
+            <h2 className="text-xl font-bold flex items-center">
               <span className="text-teal-400 mr-1">●</span> Crafted M
               <span className="text-rose-500">a</span>rt Agency
             </h2>
-            <h3 className="mt-6 text-lg font-semibold">
+            <h3 className="mt-6 text-lg font-semibold text-white/80">
               Best Creative IT Agency And Solutions{" "}
               <span className="text-teal-400">Since 2020.</span>
             </h3>
@@ -113,7 +113,7 @@ const Choose = () => {
               #1
             </div>
 
-            <button className="mt-8 flex items-center gap-2 border border-gray-600 px-4 py-2 rounded-full text-sm hover:bg-teal-400 hover:text-black transition">
+            <button className="mt-6 flex items-center gap-2 border border-gray-600 px-4 py-2 rounded-full text-sm hover:bg-teal-400 hover:text-black transition">
               About More <FiArrowRight aria-hidden="true" />
             </button>
           </div>

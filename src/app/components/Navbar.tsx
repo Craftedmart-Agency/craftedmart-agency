@@ -124,11 +124,22 @@ const Navbar = () => {
               </button>
             )}
 
-            <Link href="#contactme">
+            {/* <Link href="#contactme">
               <button className="bg-teal-700 text-white px-5 py-3 rounded-md font-semibold hover:bg-teal-500 transition text-sm">
                 Get A Quote
               </button>
-            </Link>
+            </Link> */}
+          </div>
+
+          <div>
+            <button
+              onClick={() => {
+                router.push("/dashboard");
+              }}
+              className="px-5 py-2 md:py-3  bg-white/5 border border-white/10 backdrop-blur-md text-gray-200 rounded-lg hover:bg-teal-400/10 hover:border-teal-400/50 hover:text-teal-400 hover:shadow-[0_0_15px_rgba(45,212,191,0.2)] transition-all duration-300 font-medium text-sm"
+            >
+              Dashboard
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
