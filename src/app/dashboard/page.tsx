@@ -86,7 +86,7 @@ const UserDashboard = () => {
 
             <div className="flex items-center gap-3 border-l-0 sm:border-l border-teal-900/30 pl-0 sm:pl-6">
               <div className="text-right">
-                <p className="text-sm font-medium">Shakil</p>
+                <p className="text-sm font-medium">USER NAME</p>
                 <p className="text-[10px] text-gray-500 uppercase tracking-widest">
                   Premium Client
                 </p>
@@ -158,6 +158,9 @@ const UserDashboard = () => {
             </div>
           </div>
         </div>
+      <div>
+        
+      </div>
       </main>
     </div>
   );
