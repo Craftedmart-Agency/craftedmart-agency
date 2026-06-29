@@ -5,6 +5,8 @@ const packages = [
     badge: "Basic",
     name: "Starter Web Pack",
     price: "৳6,999",
+    regularPrice: "৳11,999", // রেগুলার প্রাইস যোগ করা হলো
+    offerNote: "July Offer Only", // অফার নোট যোগ করা হলো
     gradient: "from-[#45CAFF] to-[#0147FF]",
     buttonText: "Get Started",
     buttonBg: "bg-[#111827]",
@@ -56,7 +58,7 @@ const packages = [
 
 export default function PricingPlans() {
   return (
-    <div className="bg-black py-20 px-4 min-h-screen ">
+    <div className="bg-black py-20 px-4 min-h-screen">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-24 text-white uppercase tracking-wider">
         Pricing & Packages
       </h2>
@@ -71,13 +73,11 @@ export default function PricingPlans() {
           >
             {/* Main Card Container */}
             <div
-              className={`h-full rounded-[28px] flex flex-col p-8 text-white bg-gradient-to-b  ${pkg.gradient}`}
+              className={`h-full rounded-[28px] flex flex-col p-8 text-white bg-gradient-to-b ${pkg.gradient}`}
             >
               {/* Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span
-                  className={`px-6 py-1 rounded-full text-sm font-bold text-white bg-[#0B1120] border border-gray-700 flex items-center gap-1`}
-                >
+                <span className="px-6 py-1 rounded-full text-sm font-bold text-white bg-[#0B1120] border border-gray-700 flex items-center gap-1">
                   {pkg.badge}
                   {pkg.isPopular && <span className="text-teal-400">★</span>}
                 </span>
@@ -108,10 +108,28 @@ export default function PricingPlans() {
 
               {/* Price & Button */}
               <div className="mt-10">
-                <p className="text-xs opacity-80 mb-1">Price</p>
-                <p className="text-4xl font-black mb-6 tracking-tighter">
-                  {pkg.price}
-                </p>
+                <div className="flex items-baseline gap-2 mb-1">
+                  <p className="text-xs opacity-80">Price</p>
+                  {/* জুলাই অফারের জন্য রেগুলার প্রাইস কেটে দেখানোর ডিজাইন */}
+                  {pkg.regularPrice && (
+                    <span className="text-sm line-through opacity-60 font-medium">
+                      {pkg.regularPrice}
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-col mb-6">
+                  <p className="text-4xl font-black tracking-tighter">
+                    {pkg.price}
+                  </p>
+                  {/* "July Offer Only" ব্যাজ/নোট */}
+                  {pkg.offerNote && (
+                    <span className="text-xs font-bold mt-1 bg-amber-400/20 text-amber-300 px-2 py-0.5 rounded w-max border border-amber-400/30 animate-pulse">
+                      {pkg.offerNote}
+                    </span>
+                  )}
+                </div>
+
                 <button
                   className={`w-full py-3 rounded-xl font-bold transition-all hover:opacity-90 ${
                     pkg.buttonBg

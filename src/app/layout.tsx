@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LoadingProvider from "./providers/LoadingProvider";
@@ -33,10 +33,11 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/banner.jpg" // your live image site path
+          href="/banner.png" // your live image site path
           fetchPriority="high"
         />
       </head>
+      <GoogleTagManager gtmId="GTM-PPRWMG8N" />
       <body
         className={`${poppins.className} antialiased mt-24 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat bg-fixed top-6 z-20`}
       >
