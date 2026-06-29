@@ -7,6 +7,7 @@ import LoadingProvider from "./providers/LoadingProvider";
 import { AuthProvider } from "./context/AuthContext";
 import { ModalProvider } from "./components/Modal/ModalProvider";
 import WhatsAppButton from './components/WhatsappButton';
+import "./globals.css";
 export const metadata: Metadata = {
   title: "Craftedmart Agency",
   description:
